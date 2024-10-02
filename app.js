@@ -9,7 +9,7 @@ btn.addEventListener("click", async () => {
     }
 
     try {
-        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${input.value}&key=AIzaSyDfKLOXdhTwJvzkn0rwlCpy3Rucbxb1LLw`);
+        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${input.value}&key=AIzaSyB0apGgYdvlu1jezudI5GuCp3O_tMN_s5U`);
         const data = await response.json();
         displayResults(data.items); // using callback function passing our datas as param..
     } catch (error) {
